@@ -1,0 +1,4 @@
+repository "2D Space Shooter/2D Space Shooter@1375667837592@cloud"
+  path "/"
+    br "/main"
+    co "/main"
