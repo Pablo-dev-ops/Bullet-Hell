@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed;
     public GameObject bulletPrefab;
     public Transform shootingPoint;
-    public float bulletSpeed = 10f;
+    public float bulletSpeed;
     private Vector2 targetPosition; // Posición a la que se mueve el jugador
 
     void Update()
@@ -32,11 +32,11 @@ public class PlayerController : MonoBehaviour
             ShootBullet();
         }
 
-        // Disparo
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ShootBullet();
-        }
+        // // Disparo
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     ShootBullet();
+        // }
     }
 
     void ShootBullet()
